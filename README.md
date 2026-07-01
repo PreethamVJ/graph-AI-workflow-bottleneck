@@ -149,12 +149,15 @@ memory — and want to flag what's drifted or wasn't obvious from docs alone:
    self-hosted block is in `docker-compose.yml` if the team decides
    otherwise.
 
+<<<<<<< HEAD
 4. **litellm needs the `ollama/` prefix, not a bare model name + base_url.**
    `LLM(model="llama3.2:3b", base_url="http://localhost:11434/v1")` raises
    `BadRequestError: LLM Provider NOT provided` — litellm routes by prefix,
    not by base_url alone. Use `LLM_MODEL=ollama/llama3.2:3b`. Verified
    directly with `litellm.get_llm_provider()`.
 
+=======
+>>>>>>> 17ab2c83e513018d90a7f57c60b3692b17f2a163
 Everything else (Agent/Task/Crew/Process field names, `output_pydantic`,
 `guardrail`/`guardrail_max_retries`, `@tool` decorator signature,
 `openinference-instrumentation-crewai`, `langfuse`, `tenacity`) matched the

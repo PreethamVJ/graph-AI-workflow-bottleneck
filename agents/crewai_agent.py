@@ -41,6 +41,7 @@ from __future__ import annotations
 import logging
 import os
 import time
+import uuid
 
 from crewai import LLM, Agent, Crew, Process, Task
 from tenacity import (
@@ -167,6 +168,7 @@ class CrewAIAgent(AgentSystem):
         self._last_structured_output: dict | None = None
         self._last_tokens_used: int | None = None
         self._last_retries: int = 0
+        self._last_trace_id: str | None = None
 
     # -- failure injection helpers -----------------------------------------
     def _maybe_inject_timeout(self) -> None:
@@ -301,16 +303,47 @@ class CrewAIAgent(AgentSystem):
         self._last_structured_output = None
         self._last_tokens_used = None
         self._last_retries = 0
+        self._last_trace_id = None
 
         if self.mode == "offline":
             from .offline import run_offline
-
             answer = run_offline(task, _classify(task))
             self._last_structured_output = answer.model_dump()
             return str(answer.model_dump())
 
         crew = self._crew_for(task)
+
+        # Tag the OTEL context with our run metadata before kickoff so
+        # Langfuse picks up session_id and metadata on the root span.
+        # CrewAIInstrumentor creates all child spans automatically -- we
+        # don't wrap with start_as_current_observation (that conflicts).
+        try:
+            from langfuse import get_client
+            langfuse = get_client()
+            run_id = str(uuid.uuid4())
+            # Use session_id to group all spans from this run -- lets
+            # export_traces.py find the trace even without a direct trace_id.
+            langfuse.set_current_trace_io(
+                input=task,
+                metadata={
+                    "run_id": run_id,
+                    "agent_system": self.name,
+                    "synthetic_error_type": self.failure_config.synthetic_error_type,
+                    "faulty": self.failure_config.synthetic_error_type is not None,
+                    "llm_mode": self.mode,
+                },
+            )
+        except Exception:  # noqa: BLE001 -- tagging is best-effort, never block execution
+            pass
+
         crew_output = self._kickoff_with_retry(crew)
+
+        # Capture trace_id after kickoff while we're still in the OTEL context
+        try:
+            from langfuse import get_client
+            self._last_trace_id = get_client().get_current_trace_id()
+        except Exception:  # noqa: BLE001
+            pass
 
         # crew_output.pydantic is the *last* task's structured output
         # (the Writer's FinalAnswer), since CrewOutput mirrors the final
@@ -329,6 +362,7 @@ class CrewAIAgent(AgentSystem):
         result.structured_output = self._last_structured_output
         result.tokens_used = self._last_tokens_used
         result.retries = self._last_retries
+        result.trace_id = self._last_trace_id
         return result
 
 

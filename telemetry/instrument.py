@@ -1,15 +1,15 @@
 """
-Minimal Langfuse instrumentation so Person A's smoke test ("confirm 3 traces
-appear in Langfuse with spans visible", Section 15) actually works end to end
-without waiting on Person B's full telemetry/ package.
+Langfuse instrumentation for CrewAI.
 
-Person B's export_traces.py is the real owner of the Langfuse stack (Section
-4); this module just turns instrumentation on for the current process. Safe
-to call multiple times (idempotent no-op if already instrumented).
+ORDER MATTERS -- verified against langfuse 4.12.0 + openinference-instrumentation-crewai:
 
-Usage:
-    from telemetry.instrument import instrument_crewai
-    instrument_crewai()
+  get_client()                     # installs Langfuse as the OTEL TracerProvider
+  CrewAIInstrumentor().instrument() # hooks into that provider
+
+If you call instrument() before get_client(), CrewAI spans go to the default
+ProxyTracerProvider (a no-op) and nothing appears in Langfuse -- which is
+exactly the bug that caused "Waiting for first trace" even though the batch
+ran successfully.
 """
 
 from __future__ import annotations
@@ -24,12 +24,15 @@ def instrument_crewai() -> None:
     if _instrumented:
         return
 
-    # Langfuse SDK v3+ reads these from the environment automatically.
-    # Set them in .env (see .env.example) -- defaults point at the local
-    # docker-compose Langfuse instance from Section 6.
-    os.environ.setdefault("LANGFUSE_HOST", "http://localhost:3000")
+    os.environ.setdefault("LANGFUSE_HOST", "https://cloud.langfuse.com")
 
+    # Step 1: initialise the Langfuse client. This installs Langfuse as the
+    # global OTEL TracerProvider. Must happen before any instrumentation.
+    from langfuse import get_client
+    get_client()
+
+    # Step 2: hook CrewAI into the now-configured OTEL provider.
     from openinference.instrumentation.crewai import CrewAIInstrumentor
-
     CrewAIInstrumentor().instrument()
+
     _instrumented = True
