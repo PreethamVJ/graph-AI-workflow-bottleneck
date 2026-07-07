@@ -1,0 +1,91 @@
+{
+  "trace_id": "385b16aed45352e52a08b7398be29b78",
+  "agent_system": "crewai",
+  "task": "Compare the iPhone 16 and Google Pixel 9 for a college student on a budget.",
+  "run_id": "6f6dfb39-02b1-4dfb-82c6-aba64708b4c3",
+  "spans": [
+    {
+      "span_id": "0e536675434b1002",
+      "parent_id": "e632ea2b196b9963",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 79242.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "47407db886cb7f12",
+      "parent_id": "e632ea2b196b9963",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 20714.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "9c72dc0d79003f83",
+      "parent_id": "e632ea2b196b9963",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 87828.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "abef69911e914248",
+      "parent_id": "e632ea2b196b9963",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 77327.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "e632ea2b196b9963",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_9a0ea9ec-a97f-479f-8c37-9cd653475507.kickoff",
+      "latency_ms": 265273.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": true,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 265273.0,
+    "faulty_batch": true,
+    "retries": 0,
+    "synthetic_error_type": "loop",
+    "llm_model": ""
+  }
+}

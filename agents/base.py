@@ -86,6 +86,7 @@ class RunResult:
     structured_output: dict | None = None
     tokens_used: int | None = None
     retries: int = 0
+    trace_id: str | None = None
 
 
 class AgentSystem(ABC):

@@ -1,0 +1,63 @@
+{
+  "trace_id": "8243fc829ee22f3acd86956d368a2b2f",
+  "agent_system": "crewai",
+  "task": "Plan a weekend trip to Jaipur focused on architecture and street food.",
+  "run_id": "95253054-e03a-4a4a-a57a-19252128d442",
+  "spans": [
+    {
+      "span_id": "07bc78a223cdaf53",
+      "parent_id": "711f241e783d63ee",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 42009.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "fe471d9a52989bf5",
+      "parent_id": "711f241e783d63ee",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 14354.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "711f241e783d63ee",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_d03d0110-d6db-4065-bba8-52083e03883b.kickoff",
+      "latency_ms": 56429.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": false,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 56429.0,
+    "faulty_batch": false,
+    "retries": 0,
+    "synthetic_error_type": null,
+    "llm_model": ""
+  }
+}

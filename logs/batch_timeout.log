@@ -1,0 +1,11 @@
+nohup: ignoring input
+[1/5] crewai success=False (2.0s, retries=0) error_type=timeout
+[2/5] crewai success=False (2.0s, retries=0) error_type=timeout
+[3/5] crewai success=False (2.0s, retries=0) error_type=timeout
+[4/5] crewai success=False (2.0s, retries=0) error_type=timeout
+[5/5] crewai success=False (2.0s, retries=0) error_type=timeout
+
+Done. 0 succeeded, 5 failed. Run log: data/raw/agent_system=crewai/batch_1782980725.jsonl
+Scorecard: {'n': 5, 'success_rate': 0.0, 'slow_rate': 0.0, 'avg_duration_s': 2.0, 'synthetic_error_type_counts': {'timeout': 5}}
+Flushed pending traces to Langfuse.
+Next: python export_traces.py --system crewai --input data/raw/agent_system=crewai/batch_1782980725.jsonl

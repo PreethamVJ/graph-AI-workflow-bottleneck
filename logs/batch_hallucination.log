@@ -1,0 +1,288 @@
+nohup: ignoring input
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/utilities/converter.py:363: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  llm = getattr(agent, "function_calling_llm", None) or agent.llm
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+WARNING:langfuse:Context error: No active span in current context. Operations that depend on an active span will be skipped. Ensure spans are created with start_as_current_observation() or that you're operating within an active span context.
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/crewai_agent.py:326: DeprecationWarning: Trace-level input/output is deprecated. For trace attributes (user_id, session_id, tags, etc.), use propagate_attributes() instead. This method will be removed in a future major version.
+  langfuse.set_current_trace_io(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:362: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  crew.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+WARNING:langfuse:Context error: No active span in current context. Operations that depend on an active span will be skipped. Ensure spans are created with start_as_current_observation() or that you're operating within an active span context.
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/crewai_agent.py:326: DeprecationWarning: Trace-level input/output is deprecated. For trace attributes (user_id, session_id, tags, etc.), use propagate_attributes() instead. This method will be removed in a future major version.
+  langfuse.set_current_trace_io(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:362: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  crew.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/utilities/converter.py:363: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  llm = getattr(agent, "function_calling_llm", None) or agent.llm
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+WARNING:langfuse:Context error: No active span in current context. Operations that depend on an active span will be skipped. Ensure spans are created with start_as_current_observation() or that you're operating within an active span context.
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/crewai_agent.py:326: DeprecationWarning: Trace-level input/output is deprecated. For trace attributes (user_id, session_id, tags, etc.), use propagate_attributes() instead. This method will be removed in a future major version.
+  langfuse.set_current_trace_io(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:362: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  crew.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/utilities/converter.py:363: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  llm = getattr(agent, "function_calling_llm", None) or agent.llm
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+WARNING:langfuse:Context error: No active span in current context. Operations that depend on an active span will be skipped. Ensure spans are created with start_as_current_observation() or that you're operating within an active span context.
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:358: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:366: DeprecationWarning: deprecated
+  if self.allow_code_execution:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:377: DeprecationWarning: deprecated
+  if self.reasoning and self.planning_config is None:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/crewai_agent.py:326: DeprecationWarning: Trace-level input/output is deprecated. For trace attributes (user_id, session_id, tags, etc.), use propagate_attributes() instead. This method will be removed in a future major version.
+  langfuse.set_current_trace_io(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:431: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if getattr(agent, "function_calling_llm", None)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/telemetry/telemetry.py:438: DeprecationWarning: deprecated
+  "allow_code_execution?": getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:362: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  crew.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crews/utils.py:104: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if not agent.function_calling_llm:  # type: ignore[attr-defined]
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/agent/core.py:1115: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  function_calling_llm=self.function_calling_llm,
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:635: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+  if self.function_calling_llm and not isinstance(self.function_calling_llm, LLM):
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/agents/tools.py:70: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  with DDGS() as ddgs:
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1633: DeprecationWarning: deprecated
+  if hasattr(agent, "allow_code_execution") and getattr(
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1640: DeprecationWarning: deprecated
+  and hasattr(agent, "multimodal")
+/mnt/c/Users/Asus/Downloads/graph AI/repo2/agentic-pipeline/venv/lib/python3.12/site-packages/crewai/crew.py:1641: DeprecationWarning: deprecated
+  and getattr(agent, "multimodal", False)
+WARNING:langfuse:Context error: No active span in current context. Operations that depend on an active span will be skipped. Ensure spans are created with start_as_current_observation() or that you're operating within an active span context.
+[1/5] crewai success=True (120.8s, retries=0)
+[2/5] crewai success=True (67.8s, retries=0)
+[3/5] crewai success=True (134.9s, retries=0)
+[4/5] crewai success=True (87.0s, retries=0)
+[5/5] crewai success=True (52.6s, retries=0)
+
+Done. 5 succeeded, 0 failed. Run log: data/raw/agent_system=crewai/batch_1782980771.jsonl
+Scorecard: {'n': 5, 'success_rate': 1.0, 'slow_rate': 1.0, 'avg_duration_s': 92.62, 'synthetic_error_type_counts': {'hallucination': 5}}
+Flushed pending traces to Langfuse.
+Next: python export_traces.py --system crewai --input data/raw/agent_system=crewai/batch_1782980771.jsonl

@@ -27,7 +27,9 @@
    ```bash
    python run_batch.py --system crewai --n 3
    ```
-
+8. if ollama(wsl) to windows command prompt connection problem (openai api not responding):
+   - run `ip route | grep default | awk '{print $3}'` in wsl, get ip address, update in .env for LLM_BASE_URL=http://172.27.144.1:11434/v1
+   - test it via `curl http://$(ip route | grep default | awk '{print $3}'):11434/api/tags` -> if this returns a json, connectoin proper
 ---
 
 # Dataset Generation Pipeline
@@ -139,8 +141,23 @@ Run long jobs with `nohup` so they continue even after the terminal is closed:
 nohup python run_batch.py --system crewai --n 70 --sleep 0 > logs/batch_clean.log 2>&1 &
 ```
 
+```
+bash
+nohup python run_batch.py --system crewai --n 10 --sleep 0 --faulty --error-type retrieval_fail --prob 0.4 > logs/batch_retrieval.log 2>&1 && \
+nohup python run_batch.py --system crewai --n 5 --sleep 0 --faulty --error-type timeout > logs/batch_timeout.log 2>&1 && \
+nohup python run_batch.py --system crewai --n 5 --sleep 0 --faulty --error-type hallucination --prob 0.4 > logs/batch_hallucination.log 2>&1 &
+```
 Monitor progress:
 
 ```bash
 tail -f logs/batch_clean.log
+```
+
+```
+for f in data/raw/agent_system=crewai/batch_*.jsonl; do
+    if [ -s "$f" ]; then
+        echo "=== $f ==="
+        python export_traces.py --input "$f"
+    fi
+done
 ```
