@@ -1,0 +1,63 @@
+{
+  "trace_id": "4a1414b2c0b1b5700aff5fa92c889399",
+  "agent_system": "crewai",
+  "task": "Compare the iPhone 16 and Google Pixel 9 for a college student on a budget.",
+  "run_id": "a48bd614-57c1-47ae-82f3-b17178963eb9",
+  "spans": [
+    {
+      "span_id": "7595e776ee13dea9",
+      "parent_id": "956854753fe1d060",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 19439.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "9326c7b4b0db4d0f",
+      "parent_id": "956854753fe1d060",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 49959.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "956854753fe1d060",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_8e87703b-13d4-49cb-8ea7-9d25db6097ae.kickoff",
+      "latency_ms": 69459.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": false,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 69459.0,
+    "faulty_batch": false,
+    "retries": 0,
+    "synthetic_error_type": null,
+    "llm_model": ""
+  }
+}

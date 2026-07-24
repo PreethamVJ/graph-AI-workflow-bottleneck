@@ -1,0 +1,63 @@
+{
+  "trace_id": "e50eadaa86e82ace679ca0cbdaa31e1f",
+  "agent_system": "crewai",
+  "task": "Explain this Python bug: a recursive function that hits RecursionError on inputs larger than 900, and suggest a fix.",
+  "run_id": "f5414031-391c-4c8a-b2b9-cded81694959",
+  "spans": [
+    {
+      "span_id": "b8b084df74f8e085",
+      "parent_id": "f29ee8e85160c62c",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 36240.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "eedbc17adddd091b",
+      "parent_id": "f29ee8e85160c62c",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 24452.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "f29ee8e85160c62c",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_6aa2e95a-2e65-40e0-9321-64c45ed651cc.kickoff",
+      "latency_ms": 60762.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": false,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 60762.0,
+    "faulty_batch": false,
+    "retries": 0,
+    "synthetic_error_type": null,
+    "llm_model": ""
+  }
+}

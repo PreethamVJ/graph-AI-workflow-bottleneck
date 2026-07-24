@@ -1,0 +1,63 @@
+{
+  "trace_id": "fbdba3050011f5dc3d2e58611bc24f93",
+  "agent_system": "crewai",
+  "task": "Plan a 3-day trip to Goa for two people who like beaches and seafood.",
+  "run_id": "0631fd81-e298-4b18-b6ad-e6882078b703",
+  "spans": [
+    {
+      "span_id": "fa897c9869ffc478",
+      "parent_id": "28794ec9ba6fd32b",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 70213.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "fc1dc230f34d1a80",
+      "parent_id": "28794ec9ba6fd32b",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 23094.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "28794ec9ba6fd32b",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_98d3b53c-023a-4903-b82d-f913ef397d8f.kickoff",
+      "latency_ms": 93369.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": false,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 93369.0,
+    "faulty_batch": false,
+    "retries": 0,
+    "synthetic_error_type": null,
+    "llm_model": ""
+  }
+}

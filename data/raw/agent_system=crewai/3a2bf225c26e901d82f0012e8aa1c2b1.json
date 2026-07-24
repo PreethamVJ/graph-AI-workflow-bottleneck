@@ -1,0 +1,63 @@
+{
+  "trace_id": "3a2bf225c26e901d82f0012e8aa1c2b1",
+  "agent_system": "crewai",
+  "task": "Explain why a Flask app raises 'Working outside of application context' and how to fix it.",
+  "run_id": "d1fe4fe7-d9f7-419a-83c4-e25fcf7b7946",
+  "spans": [
+    {
+      "span_id": "6dd2ceca34f32e70",
+      "parent_id": "65582f3815b16041",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 19382.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "a7138e7011940882",
+      "parent_id": "65582f3815b16041",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 42362.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "65582f3815b16041",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_8c299be2-29d6-4b0b-ad47-92f20bae0b7c.kickoff",
+      "latency_ms": 61836.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": false,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 61836.0,
+    "faulty_batch": false,
+    "retries": 0,
+    "synthetic_error_type": null,
+    "llm_model": ""
+  }
+}

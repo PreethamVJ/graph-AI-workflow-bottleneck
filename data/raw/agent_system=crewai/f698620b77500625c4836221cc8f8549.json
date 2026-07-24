@@ -1,0 +1,63 @@
+{
+  "trace_id": "f698620b77500625c4836221cc8f8549",
+  "agent_system": "crewai",
+  "task": "Compare the Sony WH-1000XM5 and Bose QC Ultra headphones for frequent flyers.",
+  "run_id": "bb33e05f-d58e-4600-9e42-8f20b50ee4ec",
+  "spans": [
+    {
+      "span_id": "d905b27169a3c14d",
+      "parent_id": "f31c6914e7a90dea",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 84293.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "ee1b8ec1f78fde9e",
+      "parent_id": "f31c6914e7a90dea",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 29782.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    },
+    {
+      "span_id": "f31c6914e7a90dea",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_0220ef21-e0e3-4d85-b7f2-6987eabc85b1.kickoff",
+      "latency_ms": 114133.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": null
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": true,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 114133.0,
+    "faulty_batch": false,
+    "retries": 0,
+    "synthetic_error_type": null,
+    "llm_model": ""
+  }
+}

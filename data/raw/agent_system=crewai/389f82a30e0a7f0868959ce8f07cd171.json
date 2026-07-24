@@ -1,0 +1,91 @@
+{
+  "trace_id": "389f82a30e0a7f0868959ce8f07cd171",
+  "agent_system": "crewai",
+  "task": "Compare the Sony WH-1000XM5 and Bose QC Ultra headphones for frequent flyers.",
+  "run_id": "36c1d90c-1874-41b5-8f37-2ba87f0ff592",
+  "spans": [
+    {
+      "span_id": "0cace9d3feedede9",
+      "parent_id": "19e472e20292e5ab",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 83032.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "582cb79f695d5851",
+      "parent_id": "19e472e20292e5ab",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 48457.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "a1d8087e0974842e",
+      "parent_id": "19e472e20292e5ab",
+      "role": "agent",
+      "name": "Researcher._execute_core",
+      "latency_ms": 52011.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "c73853724ed83b37",
+      "parent_id": "19e472e20292e5ab",
+      "role": "agent",
+      "name": "Writer._execute_core",
+      "latency_ms": 18806.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    },
+    {
+      "span_id": "19e472e20292e5ab",
+      "parent_id": null,
+      "role": "agent",
+      "name": "Crew_3c8572de-da46-4e33-b153-89dd80fe2b2f.kickoff",
+      "latency_ms": 202412.0,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0.0,
+      "model": "",
+      "tool": null,
+      "error_flag": false,
+      "synthetic_error_type": "loop"
+    }
+  ],
+  "run_labels": {
+    "success": true,
+    "slow": true,
+    "expensive": false
+  },
+  "meta": {
+    "total_tokens": 0,
+    "total_latency_ms": 202412.0,
+    "faulty_batch": true,
+    "retries": 0,
+    "synthetic_error_type": "loop",
+    "llm_model": ""
+  }
+}
